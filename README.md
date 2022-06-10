@@ -1,3 +1,15 @@
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
 # 护士排班       
 ## 背景介绍    
 护士排班问题是需要满足多种约束条件的资源分配问题。这里的约束可以分为硬约束和软约束，硬约束通常是根据地方劳动法规和护理需求等制定，为了保证护士排班方案的可行性，所要求约束必须得到满足。软约束通常用来评估护士排班的质量，多涉及个人偏好、班型匹配、休假要求、最少和最大工作天数等，所要求约束尽量得到满足，但不是必须满足。一个高质量的护士排班表，是在满足硬约束的条件下，极大可能地满足软约束。目前，大多数护士排班仍然采用手工排班的方式，该方式不仅消耗脑力和时间精力，而且由于人工算力的局限性难以得到最优的排班方案，使得最终的排班方案不能达到预期的效果。   
