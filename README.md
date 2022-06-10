@@ -37,7 +37,7 @@ $\sum_{i=1}^nx_{i,d,s}=1$
 $\sum_{s}x_{i,d,s}\leq1$   
 $\sum_{d,s}x_{i,d,s}\geq2$    
 ## python or-tools代码
-```   
+'''     
 
 """Example of a simple nurse scheduling problem."""
 from ortools.sat.python import cp_model
@@ -146,10 +146,10 @@ def main():
     print('  - solutions found: %i' % solution_printer.solution_count())
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':   
     main()
 	
-```
+'''
 
 
 
