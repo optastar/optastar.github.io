@@ -37,7 +37,8 @@ s.t.
 $\sum_{i=1}^nx_{i,d,s}=1$   
 $\sum_{s}x_{i,d,s}\leq1$   
 $\sum_{d,s}x_{i,d,s}\geq2$    
-## python or-tools代码
+## python or-tools求解csp模型    
+### 代码   
 <pre><code>       
 from ortools.sat.python import cp_model    
 
@@ -149,5 +150,93 @@ if __name__ == '__main__':
 	
 </code></pre>  
 
+### 结果   
+<pre><code>     
+Solution 1
+Day 0
+  Nurse 0 does not work
+  Nurse 1 works shift 0
+  Nurse 2 works shift 1
+  Nurse 3 works shift 2
+Day 1
+  Nurse 0 works shift 2
+  Nurse 1 does not work
+  Nurse 2 works shift 1
+  Nurse 3 works shift 0
+Day 2
+  Nurse 0 works shift 2
+  Nurse 1 works shift 1
+  Nurse 2 works shift 0
+  Nurse 3 does not work
+Solution 2
+Day 0
+  Nurse 0 works shift 0
+  Nurse 1 does not work
+  Nurse 2 works shift 1
+  Nurse 3 works shift 2
+Day 1
+  Nurse 0 does not work
+  Nurse 1 works shift 2
+  Nurse 2 works shift 1
+  Nurse 3 works shift 0
+Day 2
+  Nurse 0 works shift 2
+  Nurse 1 works shift 1
+  Nurse 2 works shift 0
+  Nurse 3 does not work
+Solution 3
+Day 0
+  Nurse 0 works shift 0
+  Nurse 1 does not work
+  Nurse 2 works shift 1
+  Nurse 3 works shift 2
+Day 1
+  Nurse 0 works shift 1
+  Nurse 1 works shift 2
+  Nurse 2 does not work
+  Nurse 3 works shift 0
+Day 2
+  Nurse 0 works shift 2
+  Nurse 1 works shift 1
+  Nurse 2 works shift 0
+  Nurse 3 does not work
+Solution 4
+Day 0
+  Nurse 0 works shift 0
+  Nurse 1 does not work
+  Nurse 2 works shift 1
+  Nurse 3 works shift 2
+Day 1
+  Nurse 0 works shift 2
+  Nurse 1 works shift 1
+  Nurse 2 does not work
+  Nurse 3 works shift 0
+Day 2
+  Nurse 0 works shift 2
+  Nurse 1 works shift 1
+  Nurse 2 works shift 0
+  Nurse 3 does not work
+Solution 5
+Day 0
+  Nurse 0 does not work
+  Nurse 1 works shift 0
+  Nurse 2 works shift 1
+  Nurse 3 works shift 2
+Day 1
+  Nurse 0 works shift 2
+  Nurse 1 works shift 1
+  Nurse 2 does not work
+  Nurse 3 works shift 0
+Day 2
+  Nurse 0 works shift 2
+  Nurse 1 works shift 1
+  Nurse 2 works shift 0
+  Nurse 3 does not work
+Stop search after 5 solutions
 
-
+Statistics
+  - conflicts      : 5
+  - branches       : 142
+  - wall time      : 0.009213 s
+  - solutions found: 5
+</code></pre>
