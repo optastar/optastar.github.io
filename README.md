@@ -31,7 +31,7 @@ $\sum_{i=1}^nx_{i,d,s}=1$
 $\sum_{s}x_{i,d,s}\leq1$    
 $\sum_{d,s}x_{i,d,s}\geq2$   
 ### **MIP模型**     
-目标函数：  $\sum_{i,d,s}MH_s \times x_{i,d,s}$     
+目标函数：  $min\sum_{i,d,s}MH_s \times x_{i,d,s}$     
 s.t.      
 $\sum_{i=1}^nx_{i,d,s}=1$   
 $\sum_{s}x_{i,d,s}\leq1$   
