@@ -29,7 +29,8 @@ $x_{i,d,s}$：如果护士i在d天s班次排班则为1，否则为0
 ### **csp数学模型**   
 $\sum_{i=1}^nx_{i,d,s}=1$   
 $\sum_{s}x_{i,d,s}\leq1$    
-$\sum_{d,s}x_{i,d,s}\geq2$   
+$\sum_{d,s}x_{i,d,s}\geq2$     
+$\sum_{d,s}x_{i,d,s}\leq3$     
 ### **MIP模型**     
 目标函数：  $min\sum_{i,d,s}MH_s \times x_{i,d,s}$     
 s.t.      
@@ -38,10 +39,8 @@ $\sum_{s}x_{i,d,s}\leq1$
 $\sum_{d,s}x_{i,d,s}\geq2$    
 ## python or-tools代码
 <pre><code>       
-
 from ortools.sat.python import cp_model    
 
-   
 def main():   
     # Data.   
     num_nurses = 4   
