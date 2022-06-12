@@ -29,15 +29,15 @@ exclude:
 
 # Jekyll SEO Tag (Optional)
 # =========================
-twitter:
-  username: ngzhio
-  card: summary
-logo: logo.png
-social:
-  name: Shangzhi Huang
-  links:
-    - https://twitter.com/ngzhio
-    - https://www.facebook.com/ngzhio
-    - https://github.com/ngzhio
-google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
-lang: en
+#twitter:
+#  username: ngzhio
+#  card: summary
+#logo: logo.png
+#social:
+#  name: Shangzhi Huang
+#  links:
+#    - https://twitter.com/ngzhio
+#    - https://www.facebook.com/ngzhio
+#    - https://github.com/ngzhio
+#google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
+#lang: en
