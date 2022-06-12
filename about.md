@@ -1,7 +1,7 @@
+---
 layout: page
-title: "about"
+title: About
 permalink: /about/
+---
 
-
-
-## Welcome to about Pages
+Another minimal style of Jekyll theme for writers.
